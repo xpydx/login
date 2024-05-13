@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="Jujutsu-Kaisen-9.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="hilang" class="bg-[url(/haha.jpg)] py-5">
+      <h1 class="text-white text-center">Login to continue</h1>
+      <form class="mx-auto w-80 mt-10" action="">
+        <div class="mx-auto">
+          <div class="flex flex-col w-80 ml-5 mb-6 gap-4">
+            <label class="text-white" for="">Email</label>
+            <input id="em" type="email" />
+          </div>
+          <div class="flex flex-col w-80 ml-5 mb-6 gap-4">
+            <label class="text-white"> password</label>
+            <input id="pa" class="slate" type="password" />
+          </div>
+        </div>
+        <h3 class="text-white" id="err"></h3>
+        <div class="flex flex-col">
+          <button
+            onclick="login()"
+            class="text-white bg-black ml-5 px-3 text-xl w-[76px]"
+          >
+            submit
+          </button>
+          <h1 class="ml-5 mt-10 text-white">
+            not a user?
+            <span onclick="navbar()" class="font-bold"> register now</span>
+          </h1>
+        </div>
+      </form>
+    </div>
+    <div id="registation" class="bg-[url(/haha.jpg)] py-5">
+      <h1 class="text-xl text-white text-center">register</h1>
+      <form class="flex flex-col w-[50%] mx-auto gap-5" action="">
+        <div class="flex flex-col text-l text-white">
+          <label for="">Email</label>
+          <input id="emaii" class="text-black" type="email" />
+        </div>
+        <div class="flex flex-col text-l text-white">
+          <label for="">Name</label>
+          <input id="name" class="text-black" type="text" />
+        </div>
+
+        <div class="flex flex-col text-l text-white">
+          <label>password</label>
+          <input id="pa" class="text-black" type="password" />
+        </div>
+        <div class="flex flex-col text-l text-white">
+          <label for="">Confirm password</label>
+          <input id="paa" class="text-black" type="password" />
+        </div>
+
+        <h3 id="er"></h3>
+        <button id="hahah" class="bg-black text-white w-[30%] mx-auto">
+          Register
+        </button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
